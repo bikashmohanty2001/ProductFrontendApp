@@ -12,12 +12,12 @@ export default function Home() {
     }, []);
 
     const loadProduct = async () => {
-        const result = await axios.get("http://localhost:8080/api/allproducts");
+        const result = await axios.get("http://localhost:8080/product/fetch_all");
         setProduct(result.data);
     };
 
     const deleteUser=async (id)=>{
-        await axios.delete(`http://localhost:8080/api/delete/${id}`)
+        await axios.delete(`http://localhost:8080/product/delete/${id}`);
         loadProduct()
     }
 

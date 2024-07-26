@@ -27,12 +27,12 @@ export default function EdtiProduct() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        await axios.put(`http://localhost:8080/api/update/${id}`,product);
+        await axios.put(`http://localhost:8080/product/update/${id}`,product);
         navigate("/")
     };
 
     const loadProduct=async ()=>{
-        const result=await axios.get(`http://localhost:8080/api/product/${id}`)
+        const result=await axios.get(`http://localhost:8080/product/fetch/${id}`);
         setProduct(result.data)
     }
 

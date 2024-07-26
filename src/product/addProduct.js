@@ -21,7 +21,7 @@ export default function AddProduct() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        await axios.post("http://localhost:8080/api/addproduct",product);
+        await axios.post("http://localhost:8080/product/add",product);
         navigate("/")
     }
 
