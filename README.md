@@ -1,3 +1,20 @@
+## Build and Run The Application
+
+**Using Command Prompt:**
+
+- Go to project root dirictory path and copy it:
+```bash
+https://github.com/bikashmohanty2001/ProductFrontendApp.git
+```
+- Open command prompt in your system with appropriate location clone the code using this command:
+
+```bash
+git clone https://github.com/bikashmohanty2001/ProductFrontendApp.git
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
